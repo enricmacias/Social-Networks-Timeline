@@ -7,20 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		211CA54416AB0C53006746CA /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211CA54116AB0C47006746CA /* Twitter.framework */; };
+		211CA54716AB2E8A006746CA /* StatusData.m in Sources */ = {isa = PBXBuildFile; fileRef = 211CA54616AB2E8A006746CA /* StatusData.m */; };
 		2144F62C16A9EBB900828220 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2144F62B16A9EBB900828220 /* UIKit.framework */; };
 		2144F62E16A9EBB900828220 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2144F62D16A9EBB900828220 /* Foundation.framework */; };
 		2144F63016A9EBB900828220 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2144F62F16A9EBB900828220 /* CoreGraphics.framework */; };
 		2144F63616A9EBB900828220 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2144F63416A9EBB900828220 /* InfoPlist.strings */; };
 		2144F63816A9EBB900828220 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2144F63716A9EBB900828220 /* main.m */; };
-		2144F63C16A9EBB900828220 /* MyAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2144F63B16A9EBB900828220 /* MyAppAppDelegate.m */; };
+		2144F63C16A9EBB900828220 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2144F63B16A9EBB900828220 /* AppDelegate.m */; };
 		2144F63E16A9EBB900828220 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2144F63D16A9EBB900828220 /* Default.png */; };
 		2144F64016A9EBB900828220 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2144F63F16A9EBB900828220 /* Default@2x.png */; };
 		2144F64216A9EBB900828220 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2144F64116A9EBB900828220 /* Default-568h@2x.png */; };
-		2144F64516A9EBB900828220 /* MyAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2144F64416A9EBB900828220 /* MyAppViewController.m */; };
-		2144F64816A9EBB900828220 /* MyAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2144F64616A9EBB900828220 /* MyAppViewController.xib */; };
+		2144F64516A9EBB900828220 /* TimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2144F64416A9EBB900828220 /* TimelineViewController.m */; };
+		2144F64816A9EBB900828220 /* TimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2144F64616A9EBB900828220 /* TimelineViewController.xib */; };
+		2144F65316A9FBEC00828220 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2144F65216A9FBEC00828220 /* FacebookSDK.framework */; };
+		2144F65516A9FC5C00828220 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2144F65416A9FC5C00828220 /* FacebookSDKResources.bundle */; };
+		2144F65C16A9FCC700828220 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2144F65616A9FC9B00828220 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2144F65D16A9FCC700828220 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2144F65716A9FC9B00828220 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2144F65E16A9FCC700828220 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2144F65816A9FC9B00828220 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2144F66B16AA1B5700828220 /* TimelineViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2144F66A16AA1B5700828220 /* TimelineViewCell.m */; };
+		2144F66D16AA1B8D00828220 /* TimelineViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2144F66C16AA1B8D00828220 /* TimelineViewCell.xib */; };
+		2180344316AC4B7100A79D4A /* TimelineViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2180344216AC4B7100A79D4A /* TimelineViewController~ipad.xib */; };
+		2180344616AC5B3A00A79D4A /* TimelineViewCell~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2180344516AC5B3A00A79D4A /* TimelineViewCell~ipad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		211CA54116AB0C47006746CA /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		211CA54516AB2E8A006746CA /* StatusData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusData.h; sourceTree = "<group>"; };
+		211CA54616AB2E8A006746CA /* StatusData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusData.m; sourceTree = "<group>"; };
 		2144F62716A9EBB900828220 /* Social Networks Timeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Networks Timeline.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2144F62B16A9EBB900828220 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2144F62D16A9EBB900828220 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -29,14 +43,24 @@
 		2144F63516A9EBB900828220 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2144F63716A9EBB900828220 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2144F63916A9EBB900828220 /* Social Networks Timeline-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Social Networks Timeline-Prefix.pch"; sourceTree = "<group>"; };
-		2144F63A16A9EBB900828220 /* MyAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppAppDelegate.h; sourceTree = "<group>"; };
-		2144F63B16A9EBB900828220 /* MyAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppAppDelegate.m; sourceTree = "<group>"; };
+		2144F63A16A9EBB900828220 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2144F63B16A9EBB900828220 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2144F63D16A9EBB900828220 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2144F63F16A9EBB900828220 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2144F64116A9EBB900828220 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2144F64316A9EBB900828220 /* MyAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppViewController.h; sourceTree = "<group>"; };
-		2144F64416A9EBB900828220 /* MyAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppViewController.m; sourceTree = "<group>"; };
-		2144F64716A9EBB900828220 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyAppViewController.xib; sourceTree = "<group>"; };
+		2144F64316A9EBB900828220 /* TimelineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimelineViewController.h; sourceTree = "<group>"; };
+		2144F64416A9EBB900828220 /* TimelineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimelineViewController.m; sourceTree = "<group>"; };
+		2144F64716A9EBB900828220 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TimelineViewController.xib; sourceTree = "<group>"; };
+		2144F65216A9FBEC00828220 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		2144F65416A9FC5C00828220 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		2144F65616A9FC9B00828220 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		2144F65716A9FC9B00828220 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		2144F65816A9FC9B00828220 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2144F66916AA1B5700828220 /* TimelineViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineViewCell.h; sourceTree = "<group>"; };
+		2144F66A16AA1B5700828220 /* TimelineViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineViewCell.m; sourceTree = "<group>"; };
+		2144F66C16AA1B8D00828220 /* TimelineViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineViewCell.xib; sourceTree = "<group>"; };
+		2180344216AC4B7100A79D4A /* TimelineViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "TimelineViewController~ipad.xib"; sourceTree = "<group>"; };
+		2180344516AC5B3A00A79D4A /* TimelineViewCell~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "TimelineViewCell~ipad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +68,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211CA54416AB0C53006746CA /* Twitter.framework in Frameworks */,
+				2144F65C16A9FCC700828220 /* Accounts.framework in Frameworks */,
+				2144F65D16A9FCC700828220 /* AdSupport.framework in Frameworks */,
+				2144F65E16A9FCC700828220 /* Social.framework in Frameworks */,
 				2144F62C16A9EBB900828220 /* UIKit.framework in Frameworks */,
 				2144F62E16A9EBB900828220 /* Foundation.framework in Frameworks */,
 				2144F63016A9EBB900828220 /* CoreGraphics.framework in Frameworks */,
+				2144F65316A9FBEC00828220 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +102,12 @@
 		2144F62A16A9EBB900828220 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2144F65616A9FC9B00828220 /* Accounts.framework */,
+				2144F65716A9FC9B00828220 /* AdSupport.framework */,
+				2144F65816A9FC9B00828220 /* Social.framework */,
+				2144F65416A9FC5C00828220 /* FacebookSDKResources.bundle */,
+				2144F65216A9FBEC00828220 /* FacebookSDK.framework */,
+				211CA54116AB0C47006746CA /* Twitter.framework */,
 				2144F62B16A9EBB900828220 /* UIKit.framework */,
 				2144F62D16A9EBB900828220 /* Foundation.framework */,
 				2144F62F16A9EBB900828220 /* CoreGraphics.framework */,
@@ -83,11 +118,18 @@
 		2144F63116A9EBB900828220 /* Social Networks Timeline */ = {
 			isa = PBXGroup;
 			children = (
-				2144F63A16A9EBB900828220 /* MyAppAppDelegate.h */,
-				2144F63B16A9EBB900828220 /* MyAppAppDelegate.m */,
-				2144F64316A9EBB900828220 /* MyAppViewController.h */,
-				2144F64416A9EBB900828220 /* MyAppViewController.m */,
-				2144F64616A9EBB900828220 /* MyAppViewController.xib */,
+				2144F63A16A9EBB900828220 /* AppDelegate.h */,
+				2144F63B16A9EBB900828220 /* AppDelegate.m */,
+				2144F64316A9EBB900828220 /* TimelineViewController.h */,
+				2144F64416A9EBB900828220 /* TimelineViewController.m */,
+				2144F66916AA1B5700828220 /* TimelineViewCell.h */,
+				2144F66A16AA1B5700828220 /* TimelineViewCell.m */,
+				211CA54516AB2E8A006746CA /* StatusData.h */,
+				211CA54616AB2E8A006746CA /* StatusData.m */,
+				2144F64616A9EBB900828220 /* TimelineViewController.xib */,
+				2180344216AC4B7100A79D4A /* TimelineViewController~ipad.xib */,
+				2144F66C16AA1B8D00828220 /* TimelineViewCell.xib */,
+				2180344516AC5B3A00A79D4A /* TimelineViewCell~ipad.xib */,
 				2144F63216A9EBB900828220 /* Supporting Files */,
 			);
 			path = "Social Networks Timeline";
@@ -163,7 +205,11 @@
 				2144F63E16A9EBB900828220 /* Default.png in Resources */,
 				2144F64016A9EBB900828220 /* Default@2x.png in Resources */,
 				2144F64216A9EBB900828220 /* Default-568h@2x.png in Resources */,
-				2144F64816A9EBB900828220 /* MyAppViewController.xib in Resources */,
+				2144F64816A9EBB900828220 /* TimelineViewController.xib in Resources */,
+				2144F65516A9FC5C00828220 /* FacebookSDKResources.bundle in Resources */,
+				2144F66D16AA1B8D00828220 /* TimelineViewCell.xib in Resources */,
+				2180344316AC4B7100A79D4A /* TimelineViewController~ipad.xib in Resources */,
+				2180344616AC5B3A00A79D4A /* TimelineViewCell~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2144F63816A9EBB900828220 /* main.m in Sources */,
-				2144F63C16A9EBB900828220 /* MyAppAppDelegate.m in Sources */,
-				2144F64516A9EBB900828220 /* MyAppViewController.m in Sources */,
+				2144F63C16A9EBB900828220 /* AppDelegate.m in Sources */,
+				2144F64516A9EBB900828220 /* TimelineViewController.m in Sources */,
+				2144F66B16AA1B5700828220 /* TimelineViewCell.m in Sources */,
+				211CA54716AB2E8A006746CA /* StatusData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,12 +239,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2144F64616A9EBB900828220 /* MyAppViewController.xib */ = {
+		2144F64616A9EBB900828220 /* TimelineViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2144F64716A9EBB900828220 /* en */,
 			);
-			name = MyAppViewController.xib;
+			name = TimelineViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -255,10 +303,17 @@
 		2144F64C16A9EBB900828220 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Social Networks Timeline/Social Networks Timeline-Prefix.pch";
 				INFOPLIST_FILE = "Social Networks Timeline/Social Networks Timeline-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -266,10 +321,17 @@
 		2144F64D16A9EBB900828220 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Social Networks Timeline/Social Networks Timeline-Prefix.pch";
 				INFOPLIST_FILE = "Social Networks Timeline/Social Networks Timeline-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -293,6 +355,7 @@
 				2144F64D16A9EBB900828220 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

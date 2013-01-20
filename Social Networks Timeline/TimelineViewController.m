@@ -10,9 +10,11 @@
 
 @interface TimelineViewController ()
 
-@property (nonatomic, strong) NSMutableArray *timelineDataArray;
+@property (nonatomic, strong) NSArray *timelineDataArray;
+@property (nonatomic, strong) NSMutableArray *auxTimelineDataArray;
 @property (nonatomic, strong) NSArray *twitterAccounts;
 @property (nonatomic) int numberOfRetrievedInfo;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 - (void)retrieveDataFromFacebook;
 - (void)retrieveDataFromTwitter;
@@ -24,6 +26,7 @@
 - (NSArray *)sortByStringDate:(NSMutableArray *)unsortedArray;
 - (NSString *)phraseDateStringFromDate:(NSDate *)activityDate;
 - (void)showAlertMessage:(NSString *)message andTitle:(NSString *)title;
+- (void)refreshTimelineTableView;
 
 @end
 
@@ -52,8 +55,13 @@
     [self checkTwitterSession];
     
     // Init variables
-    _timelineDataArray = [NSMutableArray array];
+    _auxTimelineDataArray = [NSMutableArray array];
     _numberOfRetrievedInfo = 0;
+    
+    // Add UIRefreshControl
+    _refreshControl = [[UIRefreshControl alloc] init];
+    [_refreshControl addTarget:self action:@selector(refreshTimelineTableView) forControlEvents:UIControlEventValueChanged];
+    [_timelineTableView addSubview:_refreshControl];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,7 +69,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     
-    //_timelineDataArray = nil;
+    //_auxTimelineDataArray = nil;
     //_twitterAccounts = nil;
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
@@ -124,7 +132,7 @@
              {
                  // We've obtained the response from the server
                  NSArray *data = [result objectForKey:@"data"];
-                 NSLog(@"DATA: %@",data);
+                 //NSLog(@"DATA: %@",data);
                  
                  [self saveDataFromFacebookResponse:data];
              }
@@ -214,7 +222,7 @@
             // Date
             [statusData setFacebookDate:[feed objectForKey:@"created_time"]];
             
-            [_timelineDataArray addObject:statusData];
+            [_auxTimelineDataArray addObject:statusData];
         }
     }
 }
@@ -239,7 +247,7 @@
         // Date
         [statusData setTwitterDate:[feed objectForKey:@"created_at"]];
         
-        [_timelineDataArray addObject:statusData];
+        [_auxTimelineDataArray addObject:statusData];
     }
 }
 
@@ -277,9 +285,16 @@
 
 - (void)sortRetrievedInformationAndReloadTimelineTable
 {
-    [self sortByStringDate:_timelineDataArray];
+    [self sortByStringDate:_auxTimelineDataArray];
     
+    // Copy auxiliar array to the real one, so the information is ready to be visualized.
+    _timelineDataArray = [[NSArray alloc] initWithArray:_auxTimelineDataArray];
+    
+    // Reload table
     [_timelineTableView reloadData];
+    
+    // Update user interface
+    [_refreshControl endRefreshing];
     [_loadingActivityIndicatorView setHidden:YES];
     [_backgroundLoadingView setHidden:YES];
     [_loadingActivityIndicatorView stopAnimating];
@@ -396,6 +411,16 @@
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
     [alertView performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:YES];
+}
+
+- (void)refreshTimelineTableView
+{
+    //NSLog(@"refresh");
+    
+    [_auxTimelineDataArray removeAllObjects];
+    
+    [self retrieveDataFromFacebook];
+    [self retrieveDataFromTwitter];
 }
 
 # pragma mark - Action button methods

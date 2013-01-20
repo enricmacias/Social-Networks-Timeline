@@ -56,7 +56,7 @@ NSString *const FBSessionStateChangedNotification = @"com.kike.Social-Networks-T
  */
 - (BOOL)openSessionWithAllowLoginUI:(BOOL)allowLoginUI
 {
-    NSArray *permissions = [[NSArray alloc] initWithObjects:@"user_status",
+    NSArray *permissions = [[NSArray alloc] initWithObjects:@"read_stream",
                                                             @"friends_status",
                                                             nil];
     
